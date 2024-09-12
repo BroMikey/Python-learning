@@ -97,7 +97,7 @@ def process_video():
     cap = cv2.VideoCapture(0)
 
     # 初始化MediaPipe手部
-    with mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.8) as hands:
+    with mp_hands.Hands(max_num_hands=1, min_detection_confidence=0.9) as hands:
         while cap.isOpened():
             ret, frame = cap.read()
             if not ret:
